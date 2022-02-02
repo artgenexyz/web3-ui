@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bnc-onboard": "^1.37.2",
+    "react": "^17.0.2",
+    "web3": "^1.7.0"
+  },
+  "devDependencies": {
+    "node-fetch": "^3.2.0"
+  }
+}
