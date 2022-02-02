@@ -4,9 +4,9 @@ UI library for building web3 apps
 
 ## How to use (draft)
 
-1. Clone to the root of your project
-2. Add `buildship.json` to the root of your project with
-3. Import UI elements from `web3-ui`
+1. Clone to the root of your project: `git clone git@github.com:buildship-dev/web3-ui.git`
+2. Add `buildship.json` to the root of your project with proper configuration (see next paragraph): `echo "{}" > buildship.json`
+3. Import UI elements from `web3-ui`: `import { ConnectWallet } from '../web3-ui/ConnectWallet.tsx'`
 
 ## Example buildship.json
 
