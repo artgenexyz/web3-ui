@@ -36,18 +36,20 @@ UI library for building web3 apps
 ```js
 import { useContext } from "react";
 import ConnectWallet from "../../web3-ui/ConnectWallet";
-import { Web3Context } from "../../web3-ui/Web3Context";
+import { Web3Context, Web3Provider } from "../../web3-ui/Web3Context";
 import { WalletState } from "../../web3-ui/crypto";
 
 export const App = () => {
   const [web3State, _] = useContext(Web3Context);
 
   return (
-    <div className="header">
-        {web3State?.walletState === WalletState.WEB3_CONNECTED && (
-          <ConnectWallet />
-        )}
-    </div>
+    <Web3Provider>
+      <div className="header">
+          {web3State?.walletState === WalletState.WEB3_CONNECTED && (
+            <ConnectWallet />
+          )}
+      </div>
+    </Web3Provider>
   );
 };
 
